@@ -23,7 +23,7 @@ export default function ItemManger(props){
     const Edit =()=>{
         setShow(false);
 
-        onEdit(id, newAvatar, newGender, newEmail, newAddress, newFirst_Name, newLast_Name, newTextarea);
+        onEdit(id, newFirst_Name, newLast_Name, newAddress, newGender, newAvatar, newEmail, newTextarea);
 
         setNewAddress('');
         setNewAvatar('');
