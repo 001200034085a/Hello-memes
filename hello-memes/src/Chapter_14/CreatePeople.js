@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Avatar, List, Row, Col, notification, message, Popconfirm } from 'antd';
 
 export default function CreatePeople(props){
    const { onCreate } =props;
