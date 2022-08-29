@@ -38,7 +38,7 @@ export default function CreatePeople(props){
             <input type="text" placeholder="first_name" onChange={(event)=>setNewFirst_Name(event.target.value)} required /><br/><br/>
             <input type="text" placeholder="last_name" onChange={(event)=>setNewLast_Name(event.target.value)} required /><br/><br/>
             <input type="email" placeholder="email" onChange={(event)=>setNewEmail(event.target.value)} required /><br/><br/>
-            <input type="text" placeholder="gender" onChange={(event)=>setNewGender(event.target.value)} required /><br/><br/>
+            <div>nam:<input type="checkbox"onClick={()=>setNewGender("nam")} /><Col>nữ:<input type="checkbox" onClick={()=>setNewGender('nữ')} /></Col></div>
             <input type="text" placeholder="avatar" onChange={(event)=>setNewAvatar(event.target.value)} required /><br/><br/>
             <input type="text" placeholder="address" onChange={(event)=>setNewAddress(event.target.value)} required /><br/><br/>
             <input type="text" placeholder="textarea" onChange={(event)=>setNewTextarea(event.target.value)} required /><br/><br/>
