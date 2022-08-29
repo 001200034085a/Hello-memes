@@ -51,7 +51,7 @@ export default function ItemManger(props){
                             </Row> 
                             <Row>
                                 <Col>gender:</Col>&nbsp;
-                                {show ? <input type="text" onChange={(event)=>setNewGender(event.target.value)} />:<Col>{gender}</Col>}
+                                {show ? <div>nam:<input type="checkbox" onClick={()=>setNewGender('nam')} /><Col>nữ:<input type="checkbox" onClick={()=>setNewGender('nữ')} /></Col></div>:<Col>{gender}</Col>}
                             </Row>
                             <Row>
                                 <Col>address:</Col>&nbsp;
