@@ -20,7 +20,10 @@ export default function Count(){
     const stop=()=>{
         setShow(false);
     };
-
+    const reset=()=>{
+        setShow(false);
+        setTime(0);
+    }
 
     return(
         <>
@@ -38,7 +41,7 @@ export default function Count(){
         <Button  type="primary"
         ghost
         shape="round"
-        size={"large"} onClick={()=>setTime(0)}>reset</Button>
+        size={"large"} onClick={reset}>reset</Button>
         </>
     )
 }
