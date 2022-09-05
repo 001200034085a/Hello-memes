@@ -11,7 +11,10 @@ export default function Count(){
                setTime(time+1)
             }, 1000);
             return ()=>clearInterval(interval)
-        }   
+        }
+        else{
+            setTime(time)
+        }
     },[time, show]);
 
     const start=()=>{
